@@ -6,7 +6,7 @@ function mostrar()
 	var nombre;	
 	nombre=document.getElementById('elNombre').value;	
 	edad=document.getElementById('laEdad').value;
-	alert(" Usted se llama "+nombre+" y tiene "+edad+" años. ");
+	alert(" Usted se llama "+nombre+" y tiene "+edad+" años. ");// cuando ponia la coma me tiraba un error como si faltara un paretensis 
 }
 /* me salta un problema en el navegador averiguar despues 
 */
