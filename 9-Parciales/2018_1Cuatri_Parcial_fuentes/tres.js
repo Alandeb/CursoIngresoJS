@@ -1,15 +1,13 @@
 function mostrar()
 {
-	var p;	
-	var	d;
-	var	r;
-	var resta;
-	p=prompt("Ingrese precio ","0");
-	p=parseInt(p);	
-	d=prompt("Ingrese descuento ","0");
-	d=parseInt(d);
-	resta=100-d;// se agrego otra variable por que no se podia hacer con %
-	r= resta*p/100;
-	document.getElementById('elPrecioFinal').value=r;//si coloco algo entre comillas despues del var no funciona el programa   
+	var precio;	
+	var	descuento;
+	var	resultado;
+	precio=prompt("Ingrese precio ","0");
+	precio=parseInt(precio);	
+	descuento=prompt("Ingrese descuento ","0");
+	descuento=parseInt(descuento);
+	resultado=(100-descuento)*precio/100;
+	document.getElementById('elPrecioFinal').value=resultado;//si coloco algo entre comillas despues del var no funciona el programa   
 }
 
