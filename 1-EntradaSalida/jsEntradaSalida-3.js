@@ -10,3 +10,7 @@ function mostrar()
 		esto es mas que nada para los usarios
 		*/
 
+	/*	document.getElementById('elNombre').value
+
+
+	*/

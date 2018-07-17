@@ -1,4 +1,4 @@
-/*Debemos lograr tomar Los numeros por ID ,
+w/*Debemos lograr tomar Los numeros por ID ,
 transformarlos a enteros (parseInt),realizar la operación correcta y 
 mostrar el resto entre el dividendo y el divisor.
 ej.: "El resto es 0 ."*/
@@ -13,4 +13,4 @@ function SacarResto()
 	divisor=parseInt(divisor);
 	resto=dividendo%divisor;// esto "%" es para encontrar el resto de una operacion 
 	alert("El resto es: "+resto);
-}
+} 
