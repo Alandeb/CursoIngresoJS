@@ -44,9 +44,12 @@ function CalcularPrecio ()
 	}else if (cantidadlamparas==3 && (marca!='ArgentinaLuz'|| marca!='FelipeLamparas'))
 	{
 		preciodescuento=(preciolampara*95)/100;
-	}else	(cantidadlamparas<=2)
+	}else	if 	(cantidadlamparas<3)
 	{
 		preciodescuento=cantidadlamparas*35;
+	}else 
+	{
+		alert("coloque la cantidad de lamparas");
 	}
 	document.getElementById('precioDescuento').value=preciodescuento;
 	if (preciodescuento>=120)
@@ -54,8 +57,9 @@ function CalcularPrecio ()
 		precioaumentoIIBB=(preciodescuento*110)/100;
 		document.getElementById('precioDescuento').value=precioaumentoIIBB;
 		IIBB=((preciodescuento*110)/100-preciodescuento);
-		alert("IIBB Usted pago"+IIBB);
+		alert("IIBB Usted pago "+IIBB);
 	}
+	
 	
 
 }

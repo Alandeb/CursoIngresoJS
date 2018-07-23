@@ -23,7 +23,7 @@ function piedra()
 	}else if (eleccionMaquina==2) {
 		alert("perdio");
 
-	}else (eleccionMaquina==3)
+	}else
 	{
 		alert("gano");
 	}
@@ -41,7 +41,8 @@ function papel()
 	}else if (eleccionMaquina==2) {
 		alert("empato");
 
-	}else (eleccionMaquina==3){
+	}else 
+	{
 		alert("perdio");
 	}
 
@@ -57,7 +58,8 @@ function tijera()
 	}else if (eleccionMaquina==2) {
 		alert("gano");
 
-	}else (eleccionMaquina==3){
+	}else 
+	{
 		alert("empato");
 	}
 
