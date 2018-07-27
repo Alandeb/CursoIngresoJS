@@ -4,6 +4,27 @@ function mostrar()
 	var contador=0;
 	var acumulador=0;
 	var respuesta='si';
+	var numero;
+	while(respuesta=='si')//isnan(variable )
+						//para cuando muestre una letra termine		
+	{
+		
+		numero=prompt("ingrese");
+		numero=parseInt(numero);
+		acumulador=acumulador+numero;
+		contador++;
+		respuesta=prompt("coloque si para continuar o no para terminar");
+		/*
+		otra manera de hacer es poner
+		while (true);
+		contador++;
+		num=prompt
+			if(respues=="si")
+			break;
+		acumulador=acumulador+numero;
+		*/	
+
+	}
 
 
 document.getElementById('suma').value=acumulador;
