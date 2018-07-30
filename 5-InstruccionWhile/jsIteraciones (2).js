@@ -4,7 +4,7 @@ function mostrar()
 	contador=10;
 	while(contador>0)
 	{
-		console.log("DESENDENTE: "+contador);
+		console.log("DESCENDENTE: "+contador);
 		contador=contador-1;
 	}
 
@@ -18,3 +18,4 @@ function mostrar()
 		console.log(10-contador);
 		contador=contador+1;
 	}
+	*/
