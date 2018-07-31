@@ -16,10 +16,11 @@ function ComenzarIngreso ()
  	var	legajo;
  	var	nacionalidad;
  	edad=prompt("coloque una edad entre 18 y 90 inclusive");
- 	while(edad<18 || edad>90)
+ 	edad=parseInt(edad);
+ 	while(isNaN(edad)||(edad<18 || edad>90))
  	{
  		edad=prompt("coloque una edad entre 18 y 90 inclusive");
-
+ 		edad=parseInt(edad);	
  	}
  	sexo=prompt("coloque su sexo 'f' para femenino o 'm' para masculino","use minusculas");
  	while(sexo!="f" &&	sexo!="m")
@@ -28,17 +29,18 @@ function ComenzarIngreso ()
  	}
  	if (sexo=="f") 
  	{
- 		sexo=="femenino";
+ 		sexo="femenino";
  	}else
  		{
  			sexo="masculino";
  		}
  
 	estadocivil=prompt("coloque su estado civil, 1-para soltero, 2-para casados, 3-para divorciados y 4-para viudos ");
-	while(estadocivil<1||estadocivil>4)
+	estadocivil=parseInt(estadocivil);
+	while(isNaN(estadocivil)||(estadocivil<1||estadocivil>4))
 	{
 		estadocivil=prompt("coloque su estado civil, 1-para soltero, 2-para casados, 3-para divorciados y 4-para viudos ");
-		
+		estadocivil=parseInt(estadocivil);
 	}
 	if (estadocivil==1) 
 		{
@@ -60,17 +62,23 @@ function ComenzarIngreso ()
 						estadocivil="viudo";
 					}
 	sueldo=prompt("ingrese el sueldo bruto debera ser mayor a 8000");				
-	while(sueldo<8000)
+	sueldo=parseInt(sueldo);
+	while(isNaN(sueldo) || sueldo<7999)
 	{
 		sueldo=prompt("ingrese el sueldo bruto debera ser mayor a 8000");
+		sueldo=parseInt(sueldo);
+	
 	}			
 	legajo=prompt("ingrese su numero de legajo");
-	while(legajo<1000 || legajo>9999)
+	legajo=parseInt(legajo);
+	while(isNaN(legajo)||(legajo<1000 || legajo>9999))
 	{
 		legajo=prompt("ingrese su numero de legajo");
+		legajo=parseInt(legajo);
+	
 	}
 	nacionalidad=prompt("ingrese “a” para argentinos, “e” para extranjeros, “n” para nacionalizados en minusculas" );
-	while(nacionalidad!=a && nacionalidad!=e && nacionalidad!=n)
+	while(nacionalidad!="a" && nacionalidad!="e" && nacionalidad!="n")
 	{
 		nacionalidad=prompt("ingrese “a” para argentinos, “e” para extranjeros, “n” para nacionalizados en minusculas" );
 	}
@@ -85,5 +93,11 @@ function ComenzarIngreso ()
 			{
 				nacionalidad="nacionalizado/a";	
 			}
+	document.getElementById('Edad').value=edad;	
+	document.getElementById('Sexo').value=sexo;
+	document.getElementById('EstadoCivil').value=estadocivil;
+	document.getElementById('Sueldo').value=sueldo;
+	document.getElementById('Legajo').value=legajo;
+	document.getElementById('Nacionalidad').value=nacionalidad;	
 
 }
