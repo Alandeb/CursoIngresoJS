@@ -10,7 +10,7 @@ function mostrar()
 				  // depende de eso  la bandera depende de la cantidad que quiera		
 	// declarar variables
 	
-	var respuesta;
+	var respuesta="si";
 	var numero;
 	while(respuesta!='no')
 	{
