@@ -16,7 +16,11 @@ function mostrar()
 	var cantidadmenores=0;
 	var edadmaxima;
 	var edadminima;
+	var edadmujeres=0;
+	var edadhombres=0;
+	var edadtotal=0;
 	var contador=0;
+	var cantidadpersonas;
 	while(contador<4)
 	{
 		contador++;
@@ -28,6 +32,7 @@ function mostrar()
 		}
 		edad=prompt("ingrese edad");
 		edad=parseInt(edad);
+
 		while(isNaN(edad)|| edad<0||edad>100)
 		{
 			edad=prompt("ingrese edad");
@@ -36,9 +41,12 @@ function mostrar()
 		if (sexo=="f") 
 		{
 			cantidadmujeres++;
+			edadmujeres=(edadmujeres+edad)/cantidadmujeres;
+
 		}else
 		{
 			cantidadhombres++;
+			edadhombres=(edadhombres+edad)/cantidadhombres;
 		}
 		if (edad>=18) 
 		{
@@ -61,8 +69,12 @@ function mostrar()
 			{
 				edadminima=edad;
 			}
+		cantidadpersonas=cantidadmujeres+cantidadhombres;	
+		edadtotal=(edadtotal+edad)/cantidadpersonas;	
+
 	}
 	document.write("<BR>Cantidad de hombres es: "+cantidadhombres+"<BR>Cantidad de mujeres es: "+cantidadmujeres);
 	document.write("<BR>Cantidad de mayores es: "+cantidadmayores+"<BR>Cantidad de menores es: "+cantidadmenores);
-	document.write("<BR>")
+	document.write("<BR>Edad de la persona mas grande: "+edadmaxima+"<BR>Edad de la persona mas joven: "+edadminima);
+	document.write("<BR>Promedio edad mujeres: "+edadmujeres+"<BR>Promedio edad hombres: "+edadhombres+"<BR>Promedio de edad total: "+edadtotal);
 }
