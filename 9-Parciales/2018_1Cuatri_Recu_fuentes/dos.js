@@ -1,10 +1,10 @@
 function mostrar()
 {
-  	var nombre;	
-  	var	localidad;
-  	nombre=document.getElementById('elNombre').value;
-  	localidad=document.getElementById('laLocalidad').value;	
-  	alert(" Usted es "+nombre+" y vive en la localidad de "+localidad);
+  		var nombre;
+  		var localidad;
+  		nombre=document.getElementById('elNombre').value;
+  		localidad=document.getElementById('laLocalidad').value;
+  		alert("su nombre es "+nombre+" y vive en "+localidad);
 }
 /* 
 	funciono a la primera no me salto error es igual que el ejercicio 

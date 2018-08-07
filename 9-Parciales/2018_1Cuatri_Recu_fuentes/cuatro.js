@@ -2,24 +2,29 @@ function mostrar()
 {
 	var numerouno;
 	var numerodos;
-	var resultado;
-	numerouno=prompt("Coleque numero uno");
+	var respuesta;
+	numerouno=prompt("ingrese el primer numero");
 	numerouno=parseInt(numerouno);
-	numerodos=prompt("Coleque numero dos");
+	numerodos=prompt("ingrese el segundo numero");
 	numerodos=parseInt(numerodos);
-	if (numerouno==numerodos) {
-		alert("Su numero uno es "+numerouno+" y su numero dos es "+numerodos+" son iguales");
-	 }else{
-	 	if (numerouno>numerodos) {
-	 		resultado=numerouno/numerodos;
-	 		alert("El resultado es "+resultado);
-	 	}else{
-	 		resultado=numerouno+numerodos
-	 		alert("El resultado es "+resultado);
-	 		}
-	 	}
-	if (resultado<50 && (numerouno<numerodos)) {
-		alert("la suma es "+resultado+" y es menor a 50");
-	 			
-	}else{}	
+	if (numerouno==numerodos) 
+	 {
+		alert(" ingreso el numero "+numerouno+" dos veces ");
+	 }else if (numerouno>numerodos) {
+	   	respuesta=numerouno/numerodos;
+	   	alert("la division es "+respuesta);	
+	   	
+	} else if (numerouno<numerodos){
+		respuesta=numerouno+numerodos;
+		if (respuesta<50) 
+		{
+			alert("la suma es "+respuesta+" y menor que 50");
+		}else
+		 {
+				alert("la suma es "+respuesta);	
+		 }	
+	}
+
+
 }
+

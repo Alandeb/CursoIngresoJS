@@ -1,15 +1,18 @@
 
 function mostrar()
 {
-	var base;	
-	var altura;
-	var perimetro;	
-	var superficie;
- 	base = prompt("Ingrese la base del triangulo equilatero ","0");	
- 	base = parseInt(base); 
- 	altura = prompt("Ingrese el largo del triangulo equilatero ","0");
- 	altura = parseInt(altura);// el parseInt sirve para hace que la variable pase a numero si no es solo una letra 
-	perimetro = 3*base;//poner la p en mayus hizo que la variable cambien tener en cuenta 
-	superficie = (base*altura)/2;
- 	alert("Su perimetro es: "+perimetro+" y su superficie es: "+superficie);
+    var base;
+    var altura;
+    var perimetro;
+    var superficie;
+
+
+
+
+   	base=prompt("ingrese base del triangulo");
+   	altura=prompt("ingrese altura del triangulo");
+   	perimetro=base*3;
+   	superficie=(altura*base)/2;	
+   	alert(" la superficien de su triangulo es "+superficie+" el perimetro es "+perimetro);
+
 }
